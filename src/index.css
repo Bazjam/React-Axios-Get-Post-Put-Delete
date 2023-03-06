@@ -47,3 +47,8 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.error {
+  width: 400px;
+  height: 400px;
+}
