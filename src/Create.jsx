@@ -26,7 +26,7 @@ const Create =() => {
         setLoading(false)
         history.push("/")
       })
-    },2000)
+    },1000)
   }
 
   return (
