@@ -58,7 +58,7 @@
   margin-bottom: 10px;
 }
 .blog-details div {
-  margin: 20px 0;
+  margin: 50px 0;
 }
 .blog-details button {
   background: #f1356d;
@@ -71,8 +71,11 @@
 
 /* create new blog form */
 .create {
-  max-width: 400px;
+  width: auto;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 .create label {
@@ -110,4 +113,16 @@
 margin: 0 auto;
 display: flex;
 justify-content: center;
+}
+
+.redactForm {
+  max-width: 600px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.mr {
+  margin-right: 10px;
 }

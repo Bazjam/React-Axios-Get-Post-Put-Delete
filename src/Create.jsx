@@ -52,6 +52,9 @@ const Create =() => {
           > 
             <option value="mario">Mario</option>
             <option value="lisa">Lisa</option>
+            <option value="nikita">Nikita</option>
+            <option value="nina">Nina</option>
+            <option value="Artur">Artur</option>
           </select>
           {!loading && <button>Add Block</button>}
           {loading && <button disabled>Adding blog...</button>}
