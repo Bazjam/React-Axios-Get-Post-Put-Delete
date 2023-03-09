@@ -7,11 +7,7 @@ const BlogDetails = () => {
   const history = useHistory();
   const [form, setForm] = useState(false);
   const { id } = useParams();
-  const {
-    data: blog,
-    loading,
-    error,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  const { data: blog, loading, error } = useFetch("http://localhost:8000/blogs/" + id);
   const [input, setInput] = useState();
   const [textarea, setTextArea] = useState();
   
@@ -43,7 +39,7 @@ const BlogDetails = () => {
           <img
             className="error"
             src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg"
-            alt=""
+            alt="Error"
           />
         </div>
       )}
