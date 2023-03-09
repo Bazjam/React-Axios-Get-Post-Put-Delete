@@ -7,7 +7,7 @@ const useFetch = (url) => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    
+
       axios
         .get(url)
 

@@ -1,6 +1,17 @@
+import axios from "axios";
 import { Link } from "react-router-dom";
 
 const BlogList = ({ blogs, title }) => {
+
+console.log(blogs);
+
+  const handleClick = () => {
+    axios
+      .delete("http://localhost:8000/blogs/", { })
+      .then(()=> {
+        console.log(`Deleted`);
+      })
+  }
   return (
     <div className="blog-list">
       <h2>{title}</h2>
@@ -10,7 +21,7 @@ const BlogList = ({ blogs, title }) => {
             <h2>{title}</h2>
             <p>Written by {author}</p>
           </Link>
-          <button>Delete</button>
+          {/* <button onClick={handleClick}>Delete</button> */}
         </div>
       ))}
     </div>

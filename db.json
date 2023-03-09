@@ -1,3 +1,10 @@
 {
-  "blogs": []
+  "blogs": [
+    {
+      "title": "qw",
+      "body": "qw",
+      "author": "Mario",
+      "id": 1
+    }
+  ]
 }
